@@ -1,0 +1,116 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 23, 2023, 7:58:30 PM
+    Author     : ritatrindadedacruz
+*/
+
+.degradado-pane {
+  -fx-background-color: linear-gradient(to bottom, #2b3044,  #3b425c);
+  
+  
+}
+.circular-pane {
+  -fx-background-radius: 50%; /* Establece el radio para hacer que el Pane sea circular */
+  -fx-background-color: #eceefb; /* Color de fondo del Pane (puedes ajustarlo) */
+  -fx-padding: 5px; /* Espaciado interno para el efecto degradado */
+  
+}
+
+.rounded-image-view {
+  -fx-background-radius: 50%; /* Establece el radio para hacer que el ImageView sea redondo */
+}
+
+.button {
+  -fx-background-color: #62D2EA; /* Color de fondo normal */
+  -fx-text-fill: #2b3044; /* Color del texto */
+  -fx-background-radius: 50; /* Radio máximo para hacer el botón redondo */
+  -fx-padding: 5 10; /* Espacio interno más pequeño */
+  -fx-font-size: 12px; /* Tamaño de fuente más pequeño */
+  -fx-font-family: 'Arial Bold'; /* Cambio de tipo de fuente a Arial */
+  }
+.button-with-gradient {
+  -fx-background-color:
+    linear-gradient(to bottom, #2b3044, #3b425c); /* Degradado de gris oscuro a gris claro */
+  -fx-text-fill: white; /* Color del texto en contraste */
+  -fx-background-radius: 50; /* Radio de las esquinas del botón */
+  -fx-padding: 5 10; /* Espaciado interno */
+  -fx-font-size: 12px; /* Tamaño de fuente */
+}
+
+.button-pass {
+  -fx-background-color: #2b3044; /* Degradado de gris oscuro a gris claro */
+  -fx-text-fill: white; /* Color del texto en contraste */
+  -fx-background-radius: 50; /* Radio de las esquinas del botón */
+  -fx-padding: 5 10; /* Espaciado interno */
+  -fx-font-size: 12px; /* Tamaño de fuente */
+}
+
+
+/* Estilo para los botones cuando se hace hover */
+.button:hover {
+  -fx-background-color:#262729     ; /* Color de fondo en hover */
+  -fx-text-fill: #eceefb; /* Color del texto en hover */
+}
+
+.radio-button:selected .radio {
+  -fx-mark-color: #7de0e6; /* Color de la bolita cuando seleccionado */
+}
+
+
+.text-field {
+  -fx-background-color:  #eceefb; /* Color de fondo del TextField */
+  -fx-text-fill: #2b3044;; /* Color del texto */
+  -fx-prompt-text-fill: #B0C2D8    ; /* Color del texto de marcador de posición */
+  -fx-border-width: 2px; /* Ancho del borde */
+  -fx-font-family: 'Arial';
+  -fx-background-radius: 15; /* Radio de las esquinas del TextField */
+  -fx-padding: 5; /* Espacio interno */
+  -fx-font-size: 14px; /* Tamaño de fuente */
+}
+
+
+
+.label{
+   -fx-text-fill: #eceefb;
+}
+
+
+.label:hover{
+    -fx-text-fill:#62D2EA;
+}
+
+.checkbox{
+    -fx-background-radius: 50;
+    -fx-prompt-text-fill: #B0C2D8 
+}
+
+.table-view {
+    -fx-background-color: linear-gradient(to bottom,#3b425c, #2b3044); /* Fondo degradado */ 
+}
+.column-header .label {
+    -fx-text-fill:#2b3044;
+    -fx-background-color:  #eceefb; 
+}
+
+.bold-rounded-font {
+    -fx-font-family: "Arial Black", sans-serif; /* Fuente Arial Black o una fuente similar y genérica */
+    -fx-font-weight: bold; /* Texto en negritas */
+}
+
+
+.combo-box {
+    -fx-background-color:  #eceefb; /* Color de fondo del ComboBox */
+    -fx-prompt-text-fill:  #eceefb; 
+    -fx-background-radius: 15; /* Radio de las esquinas del TextField */
+    -fx-padding: 3px; /* Espaciado interno del ComboBox */
+    -fx-font-size: 14px; /* Tamaño de fuente */
+}
+
+
+
+
+
+

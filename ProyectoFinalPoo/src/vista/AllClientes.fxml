@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AllClientesController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" styleClass="degradado-pane" stylesheets="@../estilos/Estilo1.css">
+         <children>
+            <ComboBox fx:id="cbxGenero" layoutX="53.0" layoutY="75.0" onAction="#doBuscarGenero" prefWidth="150.0" promptText=" Género" styleClass="combo-box" stylesheets="@../estilos/Estilo1.css" />
+            <ComboBox fx:id="cbxProductos" layoutX="219.0" layoutY="75.0" onAction="#doBuscarProducto" prefWidth="150.0" promptText="Productos" />
+            <TableView fx:id="tableView" layoutX="53.0" layoutY="129.0" prefHeight="200.0" prefWidth="456.0" stylesheets="@../estilos/Estilo1.css">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="colNombre" minWidth="0.0" prefWidth="279.0" text="Nombre" />
+                  <TableColumn fx:id="colGenero" minWidth="0.0" prefWidth="101.0" text="Género" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtFieldNombre" layoutX="380.0" layoutY="75.0" onAction="#doBuscarNombre" prefHeight="33.0" prefWidth="169.0" promptText="  Buscar Nombre       🔎" />
+            <ImageView fx:id="imgFoto" fitHeight="139.0" fitWidth="89.0" layoutX="505.0" layoutY="160.0" onDragDetected="#doPoneFoto" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="regeresar" layoutX="491.0" layoutY="344.0" mnemonicParsing="false" onAction="#doRegresar" text="Regresar ⮕" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
