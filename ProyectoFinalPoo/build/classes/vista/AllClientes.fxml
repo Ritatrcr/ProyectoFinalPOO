@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AllClientesController">
+   <children>
+      <Pane onMousePressed="#doPoneFoto" prefHeight="400.0" prefWidth="600.0" styleClass="degradado-pane" stylesheets="@../estilos/Estilo1.css">
+         <children>
+            <ComboBox fx:id="cbxGenero" layoutX="32.0" layoutY="75.0" onAction="#doBuscarGenero" prefHeight="33.0" prefWidth="169.0" promptText=" Género" styleClass="combo-box" stylesheets="@../estilos/Estilo1.css" />
+            <ComboBox fx:id="cbxProductos" layoutX="206.0" layoutY="75.0" onAction="#doBuscarProducto" prefHeight="33.0" prefWidth="169.0" promptText="Productos" />
+            <TableView fx:id="tableView" layoutX="32.0" layoutY="129.0" onMouseClicked="#doPoneFoto" prefHeight="209.0" prefWidth="434.0" stylesheets="@../estilos/Estilo1.css">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="colNombre" minWidth="0.0" prefWidth="246.0" text="Nombre" />
+                  <TableColumn fx:id="colGenero" minWidth="0.0" prefWidth="111.0" text="Género" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtFieldNombre" layoutX="382.0" layoutY="75.0" onKeyTyped="#doBuscarNombre" prefHeight="33.0" prefWidth="191.0" promptText="  Buscar Nombre       🔎" />
+            <Pane layoutX="481.0" layoutY="180.0" prefHeight="108.0" prefWidth="105.0" style="-fx-background-color: #7de0e6;" styleClass="circular-pane" stylesheets="@../estilos/Estilo1.css">
+               <children>
+                  <Pane layoutX="7.0" layoutY="8.0" prefHeight="93.0" prefWidth="92.0" styleClass="circular-pane" stylesheets="@../estilos/Estilo1.css">
+                     <children>
+                        <ImageView fx:id="imgFoto" fitHeight="62.0" fitWidth="60.0" layoutX="16.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Label fx:id="regresar" layoutX="501.0" layoutY="355.0" onMouseClicked="#doRgresar" text="←Regresar " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

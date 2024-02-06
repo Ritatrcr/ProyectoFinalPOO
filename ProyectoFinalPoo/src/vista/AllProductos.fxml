@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AllProductosController">
+   <children>
+      <Pane prefHeight="402.0" prefWidth="602.0" styleClass="degradado-pane" stylesheets="@../estilos/Estilo1.css">
+         <children>
+            <ComboBox fx:id="cbxIdCliente" layoutX="32.0" layoutY="75.0" onAction="#filtroId" prefHeight="33.0" prefWidth="169.0" promptText="IdCliente" styleClass="combo-box" stylesheets="@../estilos/Estilo1.css" />
+            <ComboBox fx:id="cbxProductos" layoutX="206.0" layoutY="75.0" onAction="#filtroProducto" prefHeight="33.0" prefWidth="169.0" promptText="Producto" />
+            <TableView fx:id="tableView" layoutX="32.0" layoutY="128.0" prefHeight="209.0" prefWidth="541.0" stylesheets="@../estilos/Estilo1.css">
+               <columns>
+                  <TableColumn fx:id="colIdProducto" prefWidth="93.0" text="IdProducto" />
+                  <TableColumn fx:id="colIdCliente" minWidth="0.0" prefWidth="108.0" text="IdCliente" />
+                  <TableColumn fx:id="colProducto" minWidth="0.0" prefWidth="115.0" text="Producto" />
+                  <TableColumn fx:id="colApertura" minWidth="0.0" prefWidth="114.0" text="Apertura" />
+                  <TableColumn fx:id="colDisponibilidad" minWidth="0.0" prefWidth="110.0" text="Disponibilidad" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtFieldId" layoutX="382.0" layoutY="75.0" onKeyTyped="#doBuscarId" prefHeight="33.0" prefWidth="191.0" promptText="Buscar Número Producto 🔎" />
+            <Label fx:id="regresar" layoutX="501.0" layoutY="355.0" onMouseClicked="#doRegresar" text="←Regresar " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

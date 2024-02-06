@@ -1,0 +1,120 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+
+*/
+.button {
+  -fx-background-color: #62D2EA; /* Color de fondo normal */
+  -fx-text-fill: #2b3044; /* Color del texto */
+  -fx-background-radius: 8; /* Radio máximo para hacer el botón redondo */
+  -fx-padding: 5 10; /* Espacio interno más pequeño */
+  -fx-font-family: "Calibri", sans-serif; /* Fuente Arial Black o una fuente similar y genérica */
+  -fx-font-size: 13px;  
+}
+
+
+.button-pass {
+  -fx-background-color: #3C859E; /* Degradado de gris oscuro a gris claro */
+  -fx-text-fill: white; /* Color del texto en contraste */
+  -fx-background-radius: 50; /* Radio de las esquinas del botón */
+  -fx-padding: 5 10; /* Espaciado interno */
+  -fx-font-size: 12px; /* Tamaño de fuente */
+}
+
+.button:hover {
+  -fx-background-color:#B5E7F9;  /*Color de fondo en hover */
+  -fx-text-fill: #2b3044;
+}
+
+.button-effect {
+   -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 10);
+}
+
+.bold-rounded-font {
+    -fx-font-family: "Calibri", sans-serif; /* Fuente Arial Black o una fuente similar y genérica */
+    -fx-font-weight: bold; /* Texto en negritas */
+    -fx-font-size: 20px;
+}
+
+
+.checkbox{
+  -fx-background-radius: 50;
+  -fx-prompt-text-fill: #B0C2D8 
+}
+
+.circular-pane {
+  -fx-background-radius: 50%; /* Establece el radio para hacer que el Pane sea circular */
+  -fx-background-color: #ffffff; /* Color de fondo del Pane (puedes ajustarlo) */
+  -fx-padding: 5px; /* Espaciado interno para el efecto degradado */
+}
+
+.column-header .label {
+  -fx-text-fill:#2b3044;
+  -fx-background-color:  #eceefb; 
+}
+
+.combo-box {
+  -fx-background-color:  #eceefb; /* Color de fondo del ComboBox */
+  -fx-prompt-text-fill:  #eceefb; 
+  -fx-background-radius: 15; /* Radio de las esquinas del TextField */
+  -fx-padding: 3px; /* Espaciado interno del ComboBox */
+  -fx-font-size: 14px; /* Tamaño de fuente */
+}
+
+.date-picker {
+  -fx-background-color: #eceefb ; /* Color de fondo del ComboBox */
+  -fx-background-radius: 15; /* Radio de las esquinas del TextField */
+  -fx-padding: 3px; /* Espaciado interno del ComboBox */
+  -fx-font-size: 14px; /* Tamaño de fuente */
+}
+
+.degradado-pane {
+  -fx-background-color: linear-gradient(to left, #2b3044,  #3b425c); 
+}
+
+
+.label{
+     -fx-font-family: "Calibri", sans-serif;
+  -fx-text-fill: #eceefb;
+}
+
+
+.label:hover{
+  -fx-text-fill:#62D2EA;
+}
+
+.label-1 {
+    -fx-font-size: 10px; /* Tamaño de fuente */
+    -fx-text-fill:#62D2EA;
+}
+
+.otro-pane {
+  -fx-background-color: linear-gradient(to bottom, #2b3044,  #3b425c);
+}
+.rounded-pane {
+    -fx-background-color: #262729 ; /* Color de fondo */
+    -fx-background-radius: 20; /* Radio de las esquinas (ajusta según tus preferencias) */
+   -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 10); /* Efecto de sombra */
+}
+
+
+.radio-button:selected .radio {
+  -fx-mark-color: #7de0e6; /* Color de la bolita cuando seleccionado */
+}
+
+.table-view {
+  -fx-background-color: linear-gradient(to bottom,#3b425c, #2b3044); /* Fondo degradado */ 
+}
+
+.text-field {
+  -fx-background-color:  #eceefb; /* Color de fondo del TextField */
+  -fx-text-fill: #2b3044; /* Color del texto */
+  -fx-prompt-text-fill: #B0C2D8; /* Color del texto de marcador de posición */
+  -fx-border-width: 2px; /* Ancho del borde */
+  -fx-font-family: 'Arial';
+  -fx-background-radius: 15; /* Radio de las esquinas del TextField */
+  -fx-padding: 5; /* Espacio interno */
+  -fx-font-size: 14px; /* Tamaño de fuente */
+}
+
+

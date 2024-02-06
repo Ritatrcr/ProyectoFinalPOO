@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ProductosController1">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" styleClass="otro-pane" stylesheets="@../estilos/Estilo1.css">
+         <children>
+            <ComboBox fx:id="cbxProductos" layoutX="46.0" layoutY="100.0" onAction="#defineProductoActual" onMouseClicked="#doVerificaProductosNoVacio" prefHeight="33.0" prefWidth="514.0" promptText="Productos" />
+            <Button fx:id="verTodos" layoutX="51.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#doVerTodos" prefHeight="27.0" prefWidth="304.0" stylesheets="@../estilos/Estilo1.css" text="Ver Todos">
+               <styleClass>
+                  <String fx:value="button-3" />
+                  <String fx:value="button-effect" />
+               </styleClass></Button>
+            <TextField fx:id="txtidCliente" layoutX="366.0" layoutY="51.0" onKeyTyped="#doVerificaIdCliente" promptText="  Id del Cliente" />
+            <Label fx:id="btnLupa" layoutX="543.0" layoutY="51.0" onMouseClicked="#doIdCliente" prefHeight="26.0" prefWidth="23.0" text="🔍" />
+            <DatePicker fx:id="fechaCreacionProducto" editable="false" layoutX="46.0" layoutY="169.0" prefHeight="32.0" prefWidth="246.0" promptText="  Fecha Creación del Producto" styleClass="text-field2" stylesheets="@../estilos/Estilo1.css" />
+            <Label fx:id="regresar" layoutX="511.0" layoutY="351.0" onMouseClicked="#doRegresar" text="←Regresar " />
+            <Button fx:id="crear" disable="true" layoutX="46.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#doCrear" prefHeight="27.0" prefWidth="142.0" text="Crear" />
+            <Button fx:id="modificar" disable="true" layoutX="229.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#doModificar" prefHeight="27.0" prefWidth="142.0" text="Modificar" />
+            <Button fx:id="elimina" disable="true" layoutX="413.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#doEliminar" prefHeight="27.0" prefWidth="142.0" text="Eliminar" />
+            <TextField fx:id="numeroProducto" editable="false" layoutX="46.0" layoutY="244.0" onMouseClicked="#doNumeroProducto" prefHeight="33.0" prefWidth="246.0" />
+            <Label fx:id="label1" layoutX="337.0" layoutY="145.0" styleClass="bold-rounded-font" />
+            <TextField fx:id="txt1" disable="true" layoutX="328.0" layoutY="172.0" onKeyTyped="#doVerificacionTxt1" prefHeight="32.0" prefWidth="224.0" />
+            <TextField fx:id="txt2" disable="true" layoutX="328.0" layoutY="245.0" onKeyTyped="#doVerificacionTxt2" prefHeight="32.0" prefWidth="224.0" />
+            <Label fx:id="label2" layoutX="337.0" layoutY="218.0" styleClass="bold-rounded-font" />
+            <Label fx:id="reqFecha" contentDisplay="RIGHT" layoutX="229.0" layoutY="202.0" styleClass="label-1" stylesheets="@../estilos/Estilo1.css" textFill="#b91515">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="reqTxt1" contentDisplay="RIGHT" layoutX="491.0" layoutY="202.0" styleClass="label-1" stylesheets="@../estilos/Estilo1.css" textFill="#b91515">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="reqTxt2" contentDisplay="RIGHT" layoutX="494.0" layoutY="276.0" styleClass="label-1" stylesheets="@../estilos/Estilo1.css" textFill="#b91515">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="223.0" text="Número Producto" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

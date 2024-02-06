@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="panePrincipal" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ClienteController">
+   <children>
+      <Pane layoutX="-11.0" prefHeight="417.0" prefWidth="612.0" styleClass="otro-pane" stylesheets="@../estilos/Estilo1.css">
+         <children>
+            <TextField fx:id="txtNombre" layoutX="61.0" layoutY="70.0" onKeyTyped="#doVerificacionNombre" prefHeight="28.0" prefWidth="249.0" promptText="  Nombre Completo" stylesheets="@../estilos/Estilo1.css">
+               <cursor>
+                 
+               </cursor></TextField>
+            <RadioButton fx:id="rdbHombre" layoutX="69.0" layoutY="150.0" mnemonicParsing="false" text="Hombre" textFill="#eceefb" />
+            <RadioButton fx:id="rdbOtro" layoutX="256.0" layoutY="150.0" mnemonicParsing="false" text="Otro" textFill="#eceefb" />
+            <RadioButton fx:id="rdbMujer" layoutX="168.0" layoutY="150.0" mnemonicParsing="false" text="Mujer" textFill="#eceefb" />
+            <Label layoutX="65.0" layoutY="189.0" prefHeight="26.0" prefWidth="220.0" styleClass="bold-rounded-font" stylesheets="@../estilos/Estilo1.css" text="Selección de Productos..." textFill="#eceefb" />
+            <CheckBox fx:id="chbxCuentaAhorros" layoutX="66.0" layoutY="223.0" mnemonicParsing="false" text="Cuenta Ahorros" textFill="#eceefb" />
+            <CheckBox fx:id="chbxCDT" layoutX="205.0" layoutY="223.0" mnemonicParsing="false" text="CDT" textFill="#eceefb" />
+            <CheckBox fx:id="chbxCuentaCorriente" layoutX="66.0" layoutY="246.0" mnemonicParsing="false" text="Cuenta Corriente" textFill="#eceefb" />
+            <CheckBox fx:id="chbxTarjetaVisa" layoutX="205.0" layoutY="246.0" mnemonicParsing="false" text="Tarjeta Visa" textFill="#eceefb" />
+            <Button layoutX="391.0" layoutY="219.0" mnemonicParsing="false" onAction="#doLimpiar" prefHeight="26.0" prefWidth="148.0" styleClass="button-with-gradient" stylesheets="@../estilos/Estilo1.css" text="Limpiar" />
+            <Button fx:id="guardar" layoutX="391.0" layoutY="250.0" mnemonicParsing="false" onAction="#doGuardar" prefHeight="27.0" prefWidth="74.0" styleClass="button-with-gradient" stylesheets="@../estilos/Estilo1.css" text="Guardar " />
+            <Button layoutX="42.0" layoutY="304.0" mnemonicParsing="false" onAction="#doAnterior" prefHeight="18.0" prefWidth="55.0" stylesheets="@../estilos/Estilo1.css" text="&lt;&lt;">
+               <styleClass>
+                  <String fx:value="button-pass" />
+                  <String fx:value="button-effect" />
+               </styleClass></Button>
+            <Pane layoutX="391.0" layoutY="30.0" prefHeight="145.0" prefWidth="148.0" style="-fx-background-color: #7de0e6;" styleClass="circular-pane" stylesheets="@../estilos/Estilo1.css">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="109.0" layoutX="20.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" styleClass="rounded-image-view" />
+                  <Pane fx:id="paneBlanco" layoutX="6.0" layoutY="6.0" prefHeight="134.0" prefWidth="137.0" styleClass="circular-pane" stylesheets="@../estilos/Estilo1.css">
+                     <children>
+                        <ImageView fx:id="img_Foto" fitHeight="92.0" fitWidth="96.0" layoutX="21.0" layoutY="21.0" pickOnBounds="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Button fx:id="buscarId" layoutX="250.0" layoutY="33.0" mnemonicParsing="false" onAction="#doBuscar" stylesheets="@../estilos/Estilo1.css" text="Buscar" />
+            <CheckBox fx:id="chbxTarjetaAmerica" layoutX="205.0" layoutY="270.0" mnemonicParsing="false" text="Tarjeta America" textFill="#eceefb" />
+            <Pane layoutX="-6.0" layoutY="342.0" prefHeight="52.0" prefWidth="618.0" styleClass="otro-pane" stylesheets="@../estilos/Estilo1.css">
+               <children>
+                  <Button layoutX="285.0" layoutY="14.0" mnemonicParsing="false" onAction="#doVerTodo" prefHeight="26.0" prefWidth="148.0" text="Ver Todo" />
+                  <Button layoutX="175.0" layoutY="14.0" mnemonicParsing="false" onAction="#doEliminar" prefHeight="26.0" prefWidth="148.0" text="Eliminar" />
+                  <Label fx:id="btnRegresar" layoutX="522.0" layoutY="30.0" onMouseClicked="#doRegresar" text="←Regresar " />
+               </children>
+            </Pane>
+            <Button layoutX="391.0" layoutY="188.0" mnemonicParsing="false" onAction="#doSeleccionarFoto" prefHeight="26.0" prefWidth="148.0" styleClass="button-with-gradient" stylesheets="@../estilos/Estilo1.css" text="Seleccionar Foto" />
+            <Button layoutX="524.0" layoutY="304.0" mnemonicParsing="false" onAction="#doSiguiente" prefHeight="18.0" prefWidth="55.0" stylesheets="@../estilos/Estilo1.css" text="&gt;&gt;">
+               <styleClass>
+                  <String fx:value="button-pass" />
+                  <String fx:value="button-effect" />
+               </styleClass></Button>
+            <TextField fx:id="txtIdCliente" layoutX="62.0" layoutY="32.0" onKeyTyped="#doVerificacionIdCliente" prefHeight="27.0" prefWidth="178.0" promptText="  Id">
+               <cursor>
+                  
+               </cursor></TextField>
+            <TextField fx:id="textFieldClave" layoutX="62.0" layoutY="107.0" prefHeight="28.0" prefWidth="249.0" promptText="  Clave" />
+            <Button fx:id="modificar" layoutX="468.0" layoutY="250.0" mnemonicParsing="false" onAction="#doModificar" prefHeight="27.0" prefWidth="74.0" styleClass="button-with-gradient" stylesheets="@../estilos/Estilo1.css" text="Modificar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
